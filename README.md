@@ -4,12 +4,10 @@ This is compiled WebDNN models from https://github.com/mil-tokyo/webdnn/tree/mas
 
 ## Usage
 
-#### jsDelivr CDN
-
 ```js
-<script src="https://cdn.jsdelivr.net/gh/webdnnModels/fast-neural-style-transfer@master/dist/webdnn.js"></script>
+<script src="https://raw.githubusercontent.com/webdnnModels/fast-neural-style-transfer/master/dist/webdnn.js"></script>
 <script>
-    const cdnHost = "https://cdn.jsdelivr.net/gh/webdnnModels/fast-neural-style-transfer@master/"
+    const cdnHost = "https://raw.githubusercontent.com/webdnnModels/fast-neural-style-transfer/master/"
     const options = {backendOrder:['webgpu','webassembly','webgl']}
     const dnn
     dnn = await WebDNN.load(`${cdnHost}output.candy`, options)
